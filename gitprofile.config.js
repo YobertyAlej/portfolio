@@ -2,113 +2,104 @@
 
 const config = {
   github: {
-    username: 'arifszn', // Your GitHub org/user name. (Required)
+    username: 'yobertyalej', // Your GitHub org/user name. (Required)
     sortBy: 'stars', // stars | updated
     limit: 10, // How many projects to display.
     exclude: {
-      forks: false, // Forked projects will not be displayed if set to true.
-      projects: [], // These projects will not be displayed. example: ['my-project1', 'my-project2']
+      forks: true, // Forked projects will not be displayed if set to true.
+      projects: [
+        'gatsby-netlify-cms',
+        'order-api-ts',
+        'github-email',
+        'this-portfolio'
+      ], // These projects will not be displayed. example: ['my-project1', 'my-project2']
     },
   },
   social: {
-    linkedin: 'ariful-alam',
-    twitter: 'arif_szn',
-    mastodon: 'arifszn@mastodon.social',
-    facebook: '',
-    instagram: '',
-    dribbble: '',
-    behance: '',
-    medium: 'arifszn',
-    dev: 'arifszn',
-    stackoverflow: '', // format: userid/username
-    skype: '',
-    telegram: '',
-    website: 'https://arifszn.com',
-    phone: '',
-    email: 'arifulalamszn@gmail.com',
+    linkedin: 'yobertyalej',
+    twitter: 'yobertyalej',
+    facebook: 'yobertyalej',
+    instagram: 'yobertyalej',
+    medium: 'yobertyalej',
+    telegram: 'jelaytreboy',
+    phone: '🇻🇪 +584120510619',
+    email: 'gyoberty@gmail.com',
   },
   resume: {
     fileUrl:
-      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
+      'https://www.dropbox.com/s/nefhed4pgbs1x8j/Resume%20YobertyAlej%20%281%29.pdf?dl=1', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
     'PHP',
     'Laravel',
     'JavaScript',
     'React.js',
+    'Vue',
     'Node.js',
-    'Nest.js',
     'MySQL',
     'PostgreSQL',
     'Git',
     'Docker',
     'PHPUnit',
     'CSS',
-    'Antd',
     'Tailwind',
   ],
   experiences: [
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'September 2021',
+      company: 'CIFES',
+      position: 'Senior Fullstack Engineer',
+      from: 'January 2022',
       to: 'Present',
-      companyLink: 'https://example.com',
+      companyLink: 'https://app.cifesonline.com/',
     },
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
-      to: 'August 2021',
-      companyLink: 'https://example.com',
+      company: 'NativApps Inc',
+      position: 'Senior Fullstack Engineer',
+      from: 'November 2022',
+      to: 'Present',
+      companyLink: 'https://nativapps.com/',
+    },
+    {
+      company: 'APPYWEB',
+      position: 'Senior Full Stack Engineer',
+      from: 'June 2021',
+      to: 'August 2022',
+      companyLink: 'https://www.appyweb.es/',
+    },
+    {
+      company: 'Rootstack',
+      position: 'Full Stack Engineer',
+      from: 'August 2019',
+      to: 'January 2021',
+      companyLink: 'https://rootstack.com/',
+    },
+    {
+      company: 'SECREA',
+      position: 'Full Stack Engineer',
+      from: 'May 2017',
+      to: 'December 2017',
+      companyLink: 'https://secundariacreativa.com/',
+    },
+    {
+      company: 'Pixeloide Studios',
+      position: 'Full Stack Engineer',
+      from: 'April 2016',
+      to: 'January 2017',
+      companyLink: 'https://secundariacreativa.com/',
     },
   ],
-  /* certifications: [
-    {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
-      link: 'https://example.com'
-    },
-  ], */
   education: [
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
-      to: '2019',
-    },
-    {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
+      institution:
+        'Universidad politécnica Territorial de Yaracuy Aristides Bastidas',
+      degree: 'Informatics Engineering',
+      from: '2011',
+      to: '2016',
     },
   ],
 
   // To hide the `My Projects` section, keep it empty.
-  externalProjects: [
-    {
-      title: 'Project Name',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-      imageUrl: 'https://via.placeholder.com/250x250',
-      link: 'https://example.com',
-    },
-    {
-      title: 'Project Name',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-      imageUrl: 'https://via.placeholder.com/250x250',
-      link: 'https://example.com',
-    },
-  ],
-  // Display blog posts from your medium or dev account. (Optional)
-  blog: {
-    source: 'dev', // medium | dev
-    username: 'arifszn', // to hide blog section, keep it empty
-    limit: 2, // How many posts to display. Max is 10.
-  },
+  externalProjects: [],
   googleAnalytics: {
     id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
   },
@@ -118,11 +109,11 @@ const config = {
     snippetVersion: 6,
   },
   themeConfig: {
-    defaultTheme: 'winter',
+    defaultTheme: 'night',
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
-    disableSwitch: false,
+    disableSwitch: true,
 
     // Should use the prefers-color-scheme media-query,
     // using user system preferences, instead of the hardcoded defaultTheme
@@ -130,7 +121,6 @@ const config = {
 
     // Hide the ring in Profile picture
     hideAvatarRing: false,
-
     // Available themes. To remove any theme, exclude from here.
     themes: [
       'light',
@@ -176,13 +166,6 @@ const config = {
       '--rounded-btn': '3rem',
     },
   },
-
-  // Optional Footer. Supports plain text or HTML.
-  footer: `Made with <a 
-      class="text-primary" href="https://github.com/arifszn/gitprofile"
-      target="_blank"
-      rel="noreferrer"
-    >GitProfile</a> and ❤️`,
 };
 
 export default config;
