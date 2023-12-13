@@ -22,7 +22,7 @@ const config = {
     instagram: 'yobertyalej',
     medium: 'yobertyalej',
     telegram: 'jelaytreboy',
-    phone: '🇻🇪 +584120510619',
+    phone: '🇨🇴 +573154649881',
     email: 'gyoberty@gmail.com',
   },
   resume: {
